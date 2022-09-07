@@ -1,0 +1,82 @@
+
+body{
+    margin:0;
+    height:2000px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+li{list-style: none;
+}
+a{ text-decoration: none;
+    color:#000;
+    padding: 8px 12px;
+}
+
+.navbar_menu li a:hover{
+    color:#fff;
+    background:#2C2A29;
+    border-radius: 4px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:beige;
+    padding: 10px 10px 10px 0px;
+}
+
+.navbar_menu{
+    display: flex;
+   
+}
+
+
+.section{
+    height:800px;
+    background:url(https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg) fixed;
+}
+.section2{
+    height:800px;
+    background-color: #fff;
+    margin-top:auto;
+}
+    
+
+.photo{
+    position: absolute; /*화면에 절대적인!*/
+    top: 100px;
+    right:200px;
+
+
+}
+h1{ font-size: 6em;
+    width:258px;
+    color:#fff;
+    font-family: sans-serif;
+    position:absolute;
+    top:80px;
+    left:400px;
+    animation: slide 2s ease-out;
+}
+
+@keyframes slide {
+    from{
+        left:-100px;
+        opacity: 0;
+    }
+    to{
+        left:400px;
+        opacity: 1;
+    }
+
+}
+@keyframes disappear{
+    from{
+        left:400px;
+        opacity: 1;
+    }
+    to{
+        left:-100px;
+        opacity: 0;
+    }
+}
